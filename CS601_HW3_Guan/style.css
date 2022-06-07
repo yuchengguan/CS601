@@ -1,0 +1,36 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: azure;
+    font-family: 'Times New Roman', Times, serif;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: whitesmoke;
+    border-radius: 5px;
+    border: 1px solid;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    width: 300px;
+}
+
+h3 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+p {
+    text-align: center;
+    margin: 20px 0;
+}
+
+button {
+    cursor: pointer;
+    background-color: skyblue;
+    border-radius: 5px;
+    display: block;
+    margin: 20px auto;
+    width: 100px;
+}

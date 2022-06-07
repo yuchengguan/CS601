@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="box">
+        <form id="form" class="form" name="myForm" action="https://bucs601.com/submit.php" method="post" onsubmit="return formValidation()">
+
+            <!-- first name -->
+            <div class="form-container">
+                <label>First Name</label>
+                <input type="text" id="firstName" name="firstName" placeholder="Please enter your first name..." required>
+                <small>Error Message</small>
+            </div>
+
+            <!-- last name -->
+            <div class="form-container">
+                <label>Last Name</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Please enter your last name..." required>
+                <small>Error Message</small>
+            </div>
+
+            <!-- facilitator -->
+            <div class="form-container">
+                <label>Facilitator's First Name</label>
+                <input type="text" id="facilitator" name="facilitator" placeholder="Please enter your facilitator's first name..." required>
+                <small>Error Message</small>
+            </div>
+
+            <!-- radio button -->
+            <div class="form-select">
+                <label>Do you like this course?</label><br>
+                <label><input type="radio" name="feedback" id="yes" value="Yes" checked>Yes</label><br>
+                <label><input type="radio" name="feedback" id="no" value="No">No</label><br>
+                <label><input type="radio" name="feedback" id="maybe" value="maybe">Not so sure</label><br>
+            </div>
+
+            <!-- check box -->
+            <div class="form-select">
+                <label>What is your favorite web language?</label><br>
+                <label><input type="checkbox" name="language" id="html" value="HTML">HTML</label><br>
+                <label><input type="checkbox" name="language" id="css" value="CSS">CSS</label><br>
+                <label><input type="checkbox" name="language" id="javascript" value="JavaScript">JavaScript</label><br>
+            </div>
+
+            <!-- submit button -->
+            <div class="form-container">
+                <button type="submit">Submit</button>
+            </div>
+
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

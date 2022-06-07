@@ -19,7 +19,7 @@
 
             <!-- Title Text -->
             <div class="header-title">
-                <h1>Welcome to Yucheng's Site</h1>
+                <h1>Contact</h1>
             </div>
         </div>
         
@@ -29,37 +29,34 @@
                 <a href="hobby.html">Hobby</a>
                 <a href="background.html">Background</a>
                 <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact</a>
             </nav>
     </header>
-
-    <main class="main">
-        <div class="widget">
-                <img src="image/index-title-image.jpg" alt="resume title image">
-                <!-- Website Introduction -->
-                <section>
-                    <h2>Introduction</h2>
-                    <P>
-                        This is a project for MET CS601. In this portfolio you will learn more information about me. I'll  
-                        try to apply what I have learned in this course, and demonstrate my own thoughts and understanding 
-                        into the design of this project. While this project may still need refinement, I appreciate your 
-                        interest in my portfolio. I hope you get a general idea of the skills I have. 
-                    </P>
-                </section>
-
-                <!-- About Me -->
-                <section>
-                    <h2>About Me</h2>
-                    <P>
-                        My name is Yucheng Guan and I currently live in <a href="https://en.wikipedia.org/wiki/Jingzhou">Jingzhou</a>, China. 
-                        I'm pursuing my master's degree at Boston University, and my major is Computer Information System 
-                        with a Web Development concentration. Programming has always been my weakness, but I have a unique 
-                        interest in web technologies. Based on continuous learning, I'm more inclined to transit to the 
-                        web product manager in the future.
-                    </P>
-                </section>
-        </div>
+    
+    <main class="widget">
+        <form class="form">
+            <h2>Contact Us</h2>
+            <hr>
+            <div class="form-container">
+                <label for="username">Name</label>
+                <input type="text" id="username" placeholder="Enter Your Full Name">
+            </div>
+            <div class="form-container">
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="Enter Your Email">
+            </div>
+            <div class="form-container">
+                <label for="phone">Phone Number</label>
+                <input type="text" id="phone" placeholder="Enter Your Phone Number">
+            </div>
+            <div class="form-container">
+                <label for="message">Message</label>
+                <textarea name="message" id="confirmPassword" placeholder="Enter your message..." rows="5" cols="30"></textarea>
+            </div>
+            <input type="submit" value="Submit" id="submit"></input>
+            <input type="reset" value="Reset" id="reset"></input>
+        </form>
     </main>
-
     <!-- footer -->
     <footer class="footer">
         <h5>Contact Me</h5>
