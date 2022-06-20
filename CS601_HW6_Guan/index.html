@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue Assignment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <h2>It's a image gallery of Rainie</h2>
+        <img v-bind:src = "poppyArr[index]" @mouseover="mouseOver" @mouseleave="mouseLeave" alt="poppy"><br>
+        <button @click = "previous" v-show="index!=0">&lt;</button>
+        <button @click = "next" v-show="index < poppyArr.length-1">&gt;</button>
+    </div>
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+{
+    "my_degree": [
+        {
+            "degree": {
+                "School": "Hubei University Of Economics",
+                "Major": "Information Management and Information System",
+                "Type": "MIS",
+                "Year conferred": "2019"
+            }
+        }, 
+        {
+            "degree": {
+                "School": "Auburn University at Montgomery",
+                "Major": "Information System",
+                "Type": "MIS",
+                "Year conferred": "2020"
+            }
+        }, 
+        {
+            "degree": {
+                "School": "Boston University",
+                "Major": "Computer Information System",
+                "Type": "MIS",
+                "Year conferred": "2023"
+            }
+        }
+    ]
+}

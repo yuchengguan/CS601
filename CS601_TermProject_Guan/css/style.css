@@ -97,7 +97,6 @@ table, th, td {
     font-size: 1.5rem;
     font-weight: 700;
     line-height: 1.25;
-    color: royalblue;
 }
 
 .widget h3 {
@@ -106,7 +105,6 @@ table, th, td {
     font-size: 1.3rem;
     font-weight: 700;
     line-height: 1.25;
-    color: tomato;
 }
 
 p {
@@ -133,72 +131,38 @@ iframe {
     margin-left: 100px;
 }
 
-/* .gallery {
-    position: relative;
-    margin: auto;
-    width: 960px;
-    height: 600px;
-    overflow: hidden;
+/* gallery */
+#app {
+    text-align: center;
+    border: solid 2px gray;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px;
+    background-color: #FFCCCC;
+    color: black;
+    padding: 10px;
 }
 
-.gallery li {
-    list-style: none;
+#app img {
+    width: 650px;
+    height: 500px;
 }
 
-.gallery a {
-    list-style: none;
+#app button {
+    border-radius: 5px;
+    width: 50px;
+    font-size: 20px;
+    background-color: aqua;
+    margin: 10px;
 }
 
-.left {
-    position: absolute;
-    top: 300px;
-    left: 0px;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-}
-
-.right{
-    position: absolute;
-    top: 300px;
-    right: 0px;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-}
-
-
-.swiper img {
-    width: 100%;
-    height: auto;
-}
-
-.swiper li {
-    list-style: none;
-    float: left;
-    margin: 0;
-} */
-
-/* test of swiper */
-.swiper {
-    width: 100%;
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-
-.swiper-slide {
-    background-position: center;
-    background-size: cover;
-    width: 300px;
-    height: 300px;
-}
-
-.swiper-slide img {
-    display: block;
-    width: 100%;
+#app h2 {
+    margin-left: 370px;
+    font-size: 2rem;
 }
 
 /* form */
 .form {
-    padding: auto;
     margin: auto;
 }
 
@@ -209,9 +173,8 @@ iframe {
 }
 
 .form-container {
-    margin-top: 10px;
+    margin-top: 5px;
     margin-bottom: 5px;
-    padding-bottom: 10px;
 }
 
 .form-container input {
@@ -229,6 +192,19 @@ iframe {
     margin-top: 5px;
     border-radius: 5px;
     border: 1px solid;
+}
+
+.form-container small {
+    color: red;
+    visibility: hidden;
+}
+
+.form-container.error small {
+    visibility: visible;
+}
+  
+.form-container.error input {
+    border: 2px red solid;
 }
 
 /* button */

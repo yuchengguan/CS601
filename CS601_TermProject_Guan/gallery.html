@@ -7,7 +7,6 @@
     <meta name="description" content="BU MET CS601 project by Yucheng Guan">
     <title>Yucheng's Site</title>
     <link href="css/style.css" rel="stylesheet">
-    <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet">
 </head>
 <body>
     <header class="header-outer">
@@ -36,23 +35,13 @@
     
     <main class="widget">
       <!-- test for swiper.js -->
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img src= "image/background-title-image.jpg">
-              </div>
-              <div class="swiper-slide">
-                <img src="image/hobby-title-image.jpg">
-              </div>
-              <div class="swiper-slide">
-                <img src="image/index-title-image.jpg">
-              </div>
-              <div class="swiper-slide">
-                <img src="image/naraka.jpg">
-              </div>
-            </div>
-            <div class="swiper-pagination"></div>
-          </div>
+      <div id="app">
+        <h2>Rainie's Gallery</h2>
+        <img v-bind:src = "poppyArr[index].img" @mouseover="mouseOver" @mouseleave="mouseLeave" alt="poppy"><br>
+        <button @click = "previous" v-show="index!=0">&lt;</button>
+        <span style="font-size: 1.25em;">{{poppyArr[index].text}}</span>
+        <button @click = "next" v-show="index < poppyArr.length - 1">&gt;</button>
+      </div>
     </main>
     <!-- footer -->
     <footer class="footer">
@@ -67,24 +56,45 @@
             All icons from <a href="https://icons8.com/">Icons8</a>
         </small>
     </footer>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script src="https://unpkg.com/vue@3"></script>
     <script>
-        var swiper = new Swiper(".mySwiper", {
-          effect: "coverflow",
-          grabCursor: true,
-          centeredSlides: true,
-          slidesPerView: "auto",
-          coverflowEffect: {
-            rotate: 50,
-            stretch: 0,
-            depth: 100,
-            modifier: 1,
-            slideShadows: true,
-          },
-          pagination: {
-            el: ".swiper-pagination",
-          },
-        });
-      </script>
+      const { createApp } = Vue
+
+      createApp({
+      data() {
+          return {
+          poppyArr:[
+              {img:'../image/poppy1.jpg', text:'Found this stray cutie around the house'},
+              {img:'../image/poppy2.jpg', text:'Decided to adopt her'},
+              {img:'../image/poppy3.jpg', text:'She was so happy when she came home'},
+              {img:'../image/poppy4.jpg', text:'Hope to see her smile every day'},],
+          index: 0,
+          }
+      }, 
+      methods: {
+        // button click event
+        previous() {
+          this.index--;
+        },
+        next() {
+          this.index++;
+        },
+
+        // mouse hover event
+        mouseOver() {
+          if(this.index <= 0) {
+            this.index = 0;
+          } else {
+            this.index--;
+          }
+        },
+        mouseLeave() {
+          this.index++;
+        }
+      }
+      }).mount('#app')
+    </script>
+  
 </body>
 </html>

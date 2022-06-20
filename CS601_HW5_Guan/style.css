@@ -1,0 +1,36 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5em;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #FFFFCC;
+}
+
+#container {
+    text-align: center;
+    border: solid 2px gray;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px;
+    background-color: #FFCCCC;
+    color: black;
+    padding: 10px;
+}
+
+#degreeTable {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table, th, td
+{
+    border: 2px solid black;
+}
+
+button {
+    font-size: 14px;
+    border-radius: 5px;
+    background-color: #CCFFFF;
+}
