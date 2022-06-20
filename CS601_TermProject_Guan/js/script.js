@@ -55,13 +55,6 @@ function formReset() {
     form.reset();
 }
 
-// input focus
-input.onfocus = function() {
-    input.style.setProperty('border', '1px solid');
-    const small = document.querySelectorAll('small');
-    small.style.visibility = 'hidden';
-}
-
 // check inputs
 function formValidation() {
     var flag = checkName(firstName) && checkName(lastName) && checkPhone(phone);
