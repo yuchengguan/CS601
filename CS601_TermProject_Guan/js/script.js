@@ -19,7 +19,7 @@ function getInputName(input) {
 
 // check name value
 function checkName(input) {
-    const nameRegex = /^[A-Za-z]+$/;
+    const nameRegex = /^[A-Z][-a-zA-Z]+$/;
     if(!input.value.match(nameRegex)) {
         showError(input, getInputName(input) + ' is not valid');
         return false;
